@@ -50,12 +50,11 @@ void loop() {
   // put your main code here, to run repeatedly:
   int ledStatus = Firebase.getInt("ledStatus");
   Serial.println(ledStatus);
-  if(ledStatus == 1){
+  if(ledStatus == 0){
     digitalWrite(ledPower, HIGH);
   } else {
     digitalWrite(ledPower, LOW);
   }
-
   //set data:
   //Firebase.set(ledStatus, "1");
 }
