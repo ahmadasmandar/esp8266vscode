@@ -13,3 +13,13 @@ body{
   font-family: Verdana;
   padding: 10px;
 }
+.lightButton{
+  font-size: 1.5em;
+  font-family: Verdana;
+  padding: 10px;
+}
+..secondtButton{
+  font-size: 1.5em;
+  font-family: Verdana;
+  padding: 10px;
+}
