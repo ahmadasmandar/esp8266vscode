@@ -18,7 +18,7 @@ $(document).ready(function(){
   var database = firebase.database();
   var ledStatus;
   var readName;
-
+// read the value of a key 
   database.ref().on("value", function(snap){
     ledStatus = snap.val().ledStatus;
     
@@ -28,14 +28,17 @@ $(document).ready(function(){
       $("#lighstat").text("The light is off");
     }
   });
+  // end of reading and changing the value of the h1 class
 
   $("#clickme").on('click',function(){
     var firebaseRef = firebase.database().ref().child("ledStatus");
 
     if(ledStatus == 1){
+      // set the new values
       firebaseRef.set(0);
       ledStatus = 0;
     } else {
+      // set the new values
       firebaseRef.set(1);
       ledStatus = 1;
     }
