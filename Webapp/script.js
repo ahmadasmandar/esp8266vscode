@@ -17,9 +17,11 @@ firebase.initializeApp(firebaseConfig);
 $(document).ready(function(){
   var database = firebase.database();
   var ledStatus;
+  var readName;
 
   database.ref().on("value", function(snap){
     ledStatus = snap.val().ledStatus;
+    
     if(ledStatus == 1){
       $("#lighstat").text("The light is on");
     } else {
@@ -38,4 +40,21 @@ $(document).ready(function(){
       ledStatus = 1;
     }
   });
+  $("#second").on('click',function(){
+    // read the value of a key 
+    database.ref().on("value",function(snap)
+    {
+      readName=snap.val().name});
+    // get the name of the child to make ready to change
+    var firebaseRef = firebase.database().ref().child("name");
+    if (readName=="Hallo i am true")
+    {
+      // set the new values
+      firebaseRef.set("Hallo I am  flase");
+    }else
+    {
+      firebaseRef.set("Hallo i am true");
+    }
+    
+    });
 });
