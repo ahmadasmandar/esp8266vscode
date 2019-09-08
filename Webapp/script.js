@@ -21,13 +21,13 @@ $(document).ready(function(){
   database.ref().on("value", function(snap){
     ledStatus = snap.val().ledStatus;
     if(ledStatus == 1){
-      $(".lightStatus").text("The light is on");
+      $("#lighstat").text("The light is on");
     } else {
-      $(".lightStatus").text("The light is off");
+      $("#lighstat").text("The light is off");
     }
   });
 
-  $(".lightButton").click(function(){
+  $("#clickme").on('click',function(){
     var firebaseRef = firebase.database().ref().child("ledStatus");
 
     if(ledStatus == 1){
