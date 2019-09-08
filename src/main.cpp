@@ -26,7 +26,7 @@
 #define FIREBASE_AUTH "M52QNwTcdRH212aB6wH8SZgwkgRedHdBXLGrutaF"
 #define WIFI_SSID "Mahya"
 #define WIFI_PASSWORD "102030ugd"
-int ledPower = 2;
+int ledPower = BUILTIN_LED;
 
 void setup() {
   // put your setup code here, to run once:
@@ -48,6 +48,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  //here we read the 
   int ledStatus = Firebase.getInt("ledStatus");
   Serial.println(ledStatus);
   if(ledStatus == 0){
@@ -56,5 +57,5 @@ void loop() {
     digitalWrite(ledPower, LOW);
   }
   //set data:
-  //Firebase.set(ledStatus, "1");
+  Firebase.set("number", "Dont try to kill me");
 }
