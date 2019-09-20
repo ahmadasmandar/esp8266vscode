@@ -14,26 +14,26 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   var database = firebase.database();
   var ledStatus;
   var readName;
-// read the value of a key 
-  database.ref().on("value", function(snap){
+  // read the value of a key 
+  database.ref().on("value", getLedStatue);
+  // end of reading and changing the value of the h1 class
+  function getLedStatue(snap) {
     ledStatus = snap.val().ledStatus;
-    
-    if(ledStatus == 1){
+
+    if (ledStatus == 1) {
       $("#lighstat").text("The light is on");
     } else {
       $("#lighstat").text("The light is off");
     }
-  });
-  // end of reading and changing the value of the h1 class
-
-  $("#clickme").on('click',function(){
+  }
+  $("#clickme").on('click', function () {
     var firebaseRef = firebase.database().ref().child("ledStatus");
 
-    if(ledStatus == 1){
+    if (ledStatus == 1) {
       // set the new values
       firebaseRef.set(0);
       ledStatus = 0;
@@ -43,21 +43,27 @@ $(document).ready(function(){
       ledStatus = 1;
     }
   });
-  $("#second").on('click',function(){
+
+  $("#second").on('click', function () {
     // read the value of a key 
-    database.ref().on("value",function(snap)
-    {
-      readName=snap.val().name});
+    database.ref().on("value", function (snap) {
+      readName = snap.val().name
+    });
     // get the name of the child to make ready to change
     var firebaseRef = firebase.database().ref().child("name");
-    if (readName=="Hallo i am true")
-    {
+    if (readName == "Hallo i am true") {
       // set the new values
       firebaseRef.set("Hallo I am  flase");
-    }else
-    {
+    } else {
       firebaseRef.set("Hallo i am true");
     }
-    
-    });
+
+  });
+  $("#success").on("click", printHello);
+
+  function printHello() {
+    alert("Hello World!");
+  }
 });
+
+// document.querySelector("#success").addEventListener("click",printHello);

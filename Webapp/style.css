@@ -30,17 +30,27 @@ body {
   position: relative;
   background-color: darkcyan;
   text-align: center;
+  border-radius: 10px;
+
 }
 
 .light_new {
   background-color: rgb(19, 117, 204);
   width: 600px;
   height: 100px;
-  margin: 5px;
   display: inline-block;
   top: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .button_container {
   background-color: coral;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+#lightstat{
+
+
 }
