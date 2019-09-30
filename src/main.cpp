@@ -20,6 +20,7 @@
 
 // you need to install ArduinoJson 5.xx with the 6.xx JsonArduino Lib will not Work
 // And the Firebase from Kotl
+// try the new git extion from vscode
 
 #include<Arduino.h>
 #include <ESP8266WiFi.h>
