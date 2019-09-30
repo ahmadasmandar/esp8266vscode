@@ -16,6 +16,11 @@
 
 // FirebaseDemo_ESP8266 is a sample that demo the different functions
 // of the FirebaseArduino API.
+
+
+// you need to install ArduinoJson 5.xx with the 6.xx JsonArduino Lib will not Work
+// And the Firebase from Kotl
+
 #include<Arduino.h>
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
