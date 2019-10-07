@@ -1,57 +1,95 @@
 body {
-  background-color: #2E4053;
+  background-color: #212121;
   margin: 0;
-  color: white;
+  /* color: white; */
+  /* text-align: center; */
 }
 
-/* .lightStatus{
-  margin-top: 20%;
-  color: white;
-  font-family: Verdana;
-}
-.lightButton{
-  font-size: 1.5em;
-  font-family: Verdana;
-  padding: 10px;
-}
-.lightButton{
-  font-size: 1.5em;
-  font-family: Verdana;
-  padding: 10px;
-}
-.secondButton{
-  /* margin-top: 50%; */
-/* font-size: 1.5em;
-  font-family: Verdana;
-  padding: 10px;
-} */
-/* here is the new code  */
-.new_heading {
+/* the Big container css  */
+
+.all-container {
   position: relative;
-  background-color: darkcyan;
-  text-align: center;
+  background-color: #8e24aa;
+  /* text-align: center; */
   border-radius: 10px;
+  margin: 10px auto;
+  height: 600px;
+  width: 800px;
 
 }
 
-.light_new {
-  background-color: rgb(19, 117, 204);
-  width: 600px;
-  height: 100px;
+/* End the big Container  */
+
+
+.leds-statue-container {
+  background-color: #424242;
+  width: 400px;
+  height: 200px;
   display: inline-block;
-  top: 5px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 200px;
+  padding: 1.5%;
+  top: 10px;
+  /* text-align: center; */
+
 }
+
 
 .button_container {
-  background-color: coral;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  margin-left: 1%;
+  background-color: #9e9e9e;
+  width: 150px;
+  /* height: 110px; */
+  border-radius: 5px;
+  margin-right: 95%;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
 }
-#lightstat{
 
 
+#lighstat {
+  color: #e0e0e0;
+  font-size: 20pt;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  left: 120px;
 }
+
+#primery {}
+
+button {}
+
+.tags-statue {
+  display: inline-block;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.8rem;
+  position: absolute;
+  /* bottom: 10px; */
+  font-weight: 600;
+}
+
+#led1-state {
+  color: #e65100;
+  top: 1%;
+}
+
+.action-button {
+  margin-top: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 900;
+  margin-top: 10px;
+  width: 120px;
+}
+
+
+
+/* 
+font-family: 'Bree Serif', serif;
+
+font-family: 'Acme', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+ */

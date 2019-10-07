@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <!-- check the push over the ssh -->
+  <!-- check the push over the ssh -->
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +13,15 @@
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>Hello, world!</title>
+  <!-- Google fonts that used to custmize the Page  -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Montserrat:300i,400,400i,500,700&display=swap"
+    rel="stylesheet">
+
+  <title>Esp-Ahmad!</title>
 </head>
 
 <body>
@@ -33,41 +41,40 @@
 
 
   <!-- here is how we write new code  -->
-  <div class="new_heading m-5 p-3">
+  <!-- <h1 style="width: 200px; margin:0 auto 0 auto">Hello world</h1> -->
+  <div class="all-container  p-2">
 
-    <div class="light_new mx-auto p-5">
-      <div id="lighstat">
+    <!-- the Button container wich be used to hold the buttons -->
+    <div class="button_container">
+      <div>
+        <button type="button " class="btn btn-success action-button" id="success">Success</button>
+      </div>
+      <div>
+        <button type="button " class="btn btn-outline-primary action-button" id="primery">Primary</button>
+      </div>
+      <div>
+        <button type="button " class="btn btn-outline-secondary action-button" id="clickme">ClickMe!</button>
+      </div>
 
+      <div>
+        <button type="button " class="btn btn-danger action-button" id="change-string">ChangeSTR</button>
       </div>
     </div>
 
-    <div class="button_container p-4 ">
-      <div>
-        <button type="button" class="btn btn-success m-3" id="success">Success</button>
-      </div>
-      <div>
-        <button type="button" class="btn btn-primary m-3">Primary</button>
-      </div>
+
+    <!-- End of the button container  -->
+
+    <!-- The light statue Div  -->
+
+    <div class="leds-statue-container">
+      <a class="tags-statue" id="led1-state">led1:</a>
+      <h1 id="lighstat"></h1>
     </div>
+    <!-- End of the led Statue Div -->
 
   </div>
 
 
-  <!-- here is our code -->
-  <h2>
-    <div class="mt-5"></div>
-    <!-- <div class="mx-auto w-25" id="lighstat"></div> -->
-  </h2>
-  <ul class="mt-5">
-    <div class="mx-auto" style="width: 150px;">
-      <button type="button" class="btn btn-primary" id="clickme">ClickMe!</button>
-    </div>
-  </ul>
-  <ul>
-    <div class="mx-auto" style="width: 200px;">
-      <button type="button" class="btn btn-danger" id="second">I am the second!</button>
-    </div>
-  </ul>
 
 
   <!-- <button class="lightButton">Click Me!</button> -->
