@@ -20,11 +20,10 @@ body {
 
 /* End the big Container  */
 
-
 .leds-statue-container {
   background-color: #424242;
   width: 400px;
-  height: 200px;
+  height: 210px;
   display: inline-block;
   border-radius: 5px;
   position: absolute;
@@ -32,9 +31,7 @@ body {
   padding: 1.5%;
   /* top: 10px; */
   /* text-align: center; */
-
 }
-
 
 .button_container {
   background-color: #9e9e9e;
@@ -46,13 +43,12 @@ body {
   text-align: center;
   position: absolute;
   /* top: 10px; */
-
 }
 
 #lighstat {
   color: #e0e0e0;
   font-size: 20pt;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 700;
   display: inline-block;
   position: absolute;
@@ -65,7 +61,7 @@ button {}
 
 .tags-statue {
   display: inline-block;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-size: 1.8rem;
   position: absolute;
   /* bottom: 10px; */
@@ -77,10 +73,9 @@ button {}
   top: 3%;
 }
 
-
 .action-button {
   margin-top: 10px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 900;
   margin-top: 10px;
   width: 120px;
@@ -92,6 +87,35 @@ button {}
   right: 10px;
   border-radius: 5px;
 }
+
+.form-one {
+  position: absolute;
+  top: 210px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 10px 0;
+
+}
+
+#text-group-1 {
+  margin: 10px 0;
+}
+
+#label-text-area {
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  text-align: right;
+  font-weight: bold;
+  padding: 3px;
+}
+
+#text-area {
+  width: 480px;
+}
+
+
 
 /* 
 font-family: 'Bree Serif', serif;

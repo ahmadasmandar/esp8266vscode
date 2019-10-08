@@ -49,7 +49,7 @@
   <div class="all-container  p-2">
 
     <!-- the Button container wich be used to hold the buttons -->
-    <div class="button_container">
+    <!-- <div class="button_container">
       <div>
         <button type="button " class="btn btn-success action-button" id="success">Success</button>
       </div>
@@ -63,6 +63,13 @@
       <div>
         <button type="button " class="btn btn-danger action-button" id="change-string">ChangeSTR</button>
       </div>
+    </div> -->
+    <div class="btn-group-vertical button-g1" role="group">
+      <button type="button" class="btn btn-secondary">TurnOn</button>
+      <button type="button" class="btn btn-secondary">TurnOff</button>
+      <button type="button" class="btn btn-secondary">CheckSens</button>
+      <button type="button" class="btn btn-secondary">GetInfo</button>
+      <button type="button" class="btn btn-secondary">PlaceHolder</button>
     </div>
 
 
@@ -78,13 +85,29 @@
 
     <img id="symbol-ard" src="ard-png.webp" alt="" height="115px" width="200px">
 
+
+    <!-- Here I will Add The new Form to send and Recive values  -->
+
+    <form class="form-one">
+      <div class="input-group" id="text-group-1">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="label-text-area">With textarea</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="text-area"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- Test button Groups from bootstrap -->
+  <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+    <button type="button" class="btn btn-secondary">5</button>
   </div>
 
-
-
-
-  <!-- <button class="lightButton">Click Me!</button> -->
-  <!-- <button class="secondButton">I am the Second one!</button> -->
+  <!-- ende of the test  -->
   <script src="script.js"></script>
 </body>
 
