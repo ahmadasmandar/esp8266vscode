@@ -9,13 +9,13 @@ body {
 
 .all-container {
   position: relative;
-  background-color: #8e24aa;
+  background-color: #ad1457;
   /* text-align: center; */
   border-radius: 10px;
   margin: 10px auto;
   height: 600px;
   width: 800px;
-
+  padding: 10px;
 }
 
 /* End the big Container  */
@@ -28,9 +28,9 @@ body {
   display: inline-block;
   border-radius: 5px;
   position: absolute;
-  right: 200px;
+  right: 220px;
   padding: 1.5%;
-  top: 10px;
+  /* top: 10px; */
   /* text-align: center; */
 
 }
@@ -39,14 +39,15 @@ body {
 .button_container {
   background-color: #9e9e9e;
   width: 150px;
-  /* height: 110px; */
   border-radius: 5px;
   margin-right: 95%;
   display: inline-block;
   padding: 10px;
   text-align: center;
-}
+  position: absolute;
+  /* top: 10px; */
 
+}
 
 #lighstat {
   color: #e0e0e0;
@@ -64,7 +65,7 @@ button {}
 
 .tags-statue {
   display: inline-block;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 1.8rem;
   position: absolute;
   /* bottom: 10px; */
@@ -72,9 +73,10 @@ button {}
 }
 
 #led1-state {
-  color: #e65100;
-  top: 1%;
+  color: #ff9800;
+  top: 3%;
 }
+
 
 .action-button {
   margin-top: 10px;
@@ -84,7 +86,12 @@ button {}
   width: 120px;
 }
 
-
+#symbol-ard {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  border-radius: 5px;
+}
 
 /* 
 font-family: 'Bree Serif', serif;
