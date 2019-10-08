@@ -33,17 +33,7 @@ body {
   /* text-align: center; */
 }
 
-.button_container {
-  background-color: #9e9e9e;
-  width: 150px;
-  border-radius: 5px;
-  margin-right: 95%;
-  display: inline-block;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  /* top: 10px; */
-}
+.button_container {}
 
 #lighstat {
   color: #e0e0e0;
