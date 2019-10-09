@@ -17,19 +17,24 @@ $(document).ready(function() {
   var database = firebase.database();
   var ledStatus;
   var readName;
+  let tex_area_text = document.querySelector("#text-area");
   // read the value of a key
   database.ref().on("value", getLedStatue);
   // end of reading and changing the value of the h1 class
   function getLedStatue(snap) {
     ledStatus = snap.val().ledStatus;
+    let nameFire = snap.val().name;
 
     if (ledStatus == 1) {
       $("#lighstat").text("The light is on");
+      document.querySelector("#led-img").src = "led-on.svg";
     } else {
       $("#lighstat").text("The light is off");
+      document.querySelector("#led-img").src = "led-off.svg";
     }
+    tex_area_text.innerHTML = nameFire;
   }
-  $("#clickme").on("click", function() {
+  $("#btn-on").on("click", function() {
     var firebaseRef = firebase
       .database()
       .ref()

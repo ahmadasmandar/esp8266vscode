@@ -50,10 +50,12 @@
   <!-- <h1 style="width: 200px; margin:0 auto 0 auto">Hello world</h1> -->
   <div class="all-container  p-2">
     <div class="btn-group-vertical button-g1" role="group">
-      <button type="button" class="btn btn-outline-success btn-g1"><span class="btn-g1-text">turn-on</span> </button>
-      <button type="button" class="btn btn-outline-primary btn-g1"><span class="btn-g1-text">CheckSens</span></button>
-      <button type="button" class="btn btn-outline-light btn-g1" id="change-button"><span
-          class="btn-g1-text">checkplanty</span></button>
+      <button type="button" class="btn btn-outline-success btn-g1">
+        <span class="btn-g1-text" id="btn-on">turn-on</span> </button>
+      <button type="button" class="btn btn-outline-primary btn-g1">
+        <span class="btn-g1-text">CheckSens</span></button>
+      <button type="button" class="btn btn-outline-light btn-g1" id="change-button">
+        <span class="btn-g1-text">checkplanty</span></button>
       <button type="button" class="btn btn-outline-warning btn-g1" id="update-btn"><span
           class="btn-g1-text">update</span></button>
       <button type="button" class="btn btn-outline-danger btn-g1"><span class="btn-g1-text">restart</span></button>
@@ -65,8 +67,17 @@
     <!-- The light statue Div  -->
 
     <div class="leds-statue-container">
-      <a class="tags-statue" id="led1-state">led1:</a>
-      <h1 id="lighstat"></h1>
+      <div>
+        <a class="tags-statue" id="led1-state">led1:</a>
+        <img src="led-on.svg" id="led-img" width="70px" height="50px">
+        <h1 id="lighstat"></h1>
+      </div>
+      <div>
+        <a class="tags-statue" id="led2-state">led2:</a>
+        <img src="led-on.svg" id="led2-img" width="70px" height="50px">
+        <h1 id="lighstat2">I am on</h1>
+      </div>
+
     </div>
     <!-- End of the led Statue Div -->
 
@@ -82,7 +93,7 @@
         </div>
         <textarea class="form-control" aria-label="With textarea" id="text-area"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-success">Submit</button>
 
       <!-- the refresh button -->
       <button type="button" class="btn btn-outline-primary"
