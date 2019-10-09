@@ -22,8 +22,10 @@
     rel="stylesheet">
 
 
+
   <!-- LEds Statue Font  -->
   <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Squada+One&display=swap" rel="stylesheet">
 
   <title>Esp-Ahmad!</title>
 </head>
@@ -47,29 +49,14 @@
   <!-- here is how we write new code  -->
   <!-- <h1 style="width: 200px; margin:0 auto 0 auto">Hello world</h1> -->
   <div class="all-container  p-2">
-
-    <!-- the Button container wich be used to hold the buttons -->
-    <!-- <div class="button_container">
-      <div>
-        <button type="button " class="btn btn-success action-button" id="success">Success</button>
-      </div>
-      <div>
-        <button type="button " class="btn btn-outline-primary action-button" id="primery">Primary</button>
-      </div>
-      <div>
-        <button type="button " class="btn btn-outline-secondary action-button" id="clickme">ClickMe!</button>
-      </div>
-
-      <div>
-        <button type="button " class="btn btn-danger action-button" id="change-string">ChangeSTR</button>
-      </div>
-    </div> -->
     <div class="btn-group-vertical button-g1" role="group">
-      <button type="button" class="btn btn-secondary">TurnOn</button>
-      <button type="button" class="btn btn-secondary">TurnOff</button>
-      <button type="button" class="btn btn-secondary">CheckSens</button>
-      <button type="button" class="btn btn-secondary">GetInfo</button>
-      <button type="button" class="btn btn-secondary">PlaceHolder</button>
+      <button type="button" class="btn btn-outline-success btn-g1"><span class="btn-g1-text">turn-on</span> </button>
+      <button type="button" class="btn btn-outline-primary btn-g1"><span class="btn-g1-text">CheckSens</span></button>
+      <button type="button" class="btn btn-outline-light btn-g1" id="change-button"><span
+          class="btn-g1-text">checkplanty</span></button>
+      <button type="button" class="btn btn-outline-warning btn-g1" id="update-btn"><span
+          class="btn-g1-text">update</span></button>
+      <button type="button" class="btn btn-outline-danger btn-g1"><span class="btn-g1-text">restart</span></button>
     </div>
 
 
@@ -96,18 +83,24 @@
         <textarea class="form-control" aria-label="With textarea" id="text-area"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
+
+      <!-- the refresh button -->
+      <button type="button" class="btn btn-outline-primary"
+        onClick="window.location.href=window.location.href">Refresh</button>
     </form>
-  </div>
-  <!-- Test button Groups from bootstrap -->
-  <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
-    <button type="button" class="btn btn-secondary">1</button>
-    <button type="button" class="btn btn-secondary">2</button>
-    <button type="button" class="btn btn-secondary">3</button>
-    <button type="button" class="btn btn-secondary">4</button>
-    <button type="button" class="btn btn-secondary">5</button>
+
+    <img src="plant-gesund.svg" id="plant-img">
   </div>
 
+
+  <!-- Test forms  from bootstrap -->
+
+
   <!-- ende of the test  -->
+
+
+
+
   <script src="script.js"></script>
 </body>
 
